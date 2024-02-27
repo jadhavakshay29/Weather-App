@@ -73,7 +73,7 @@ function  displayHourlyForecast(hourlyData){
     // console.log(hourlyData);
 
     next24Hours.forEach(item=>{
-       
+    //    console.log(item);
         const dateTime = new Date(item.dt * 1000);
         const hour = dateTime.getHours();
         const temp = Math.round(item.main.temp - 273.15);
